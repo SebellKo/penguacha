@@ -1,0 +1,979 @@
+/* Antarctic Igloo Theme with Enhanced Text Sizing */
+
+/* Enhanced p tag styling for better readability */
+p {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Responsive p tag sizing */
+@media (max-width: 640px) {
+  p {
+    font-size: 14px !important;
+  }
+}
+
+/* Contextual p tag sizes */
+.text-lg p {
+  font-size: 18px !important;
+}
+
+.text-xl p {
+  font-size: 20px !important;
+}
+
+.text-sm p {
+  font-size: 14px !important;
+}
+
+.text-xs p {
+  font-size: 12px !important;
+}
+
+/* Mobile responsive adjustments for contextual sizes */
+@media (max-width: 640px) {
+  .text-lg p {
+    font-size: 16px !important;
+  }
+
+  .text-xl p {
+    font-size: 18px !important;
+  }
+
+  .text-sm p {
+    font-size: 12px !important;
+  }
+
+  .text-xs p {
+    font-size: 10px !important;
+  }
+}
+
+/* Pixel Art Pengu Styling */
+.pixel-art-gem {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.pixel-art-image {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.pixel-sparkle {
+  image-rendering: pixelated;
+  border-radius: 2px;
+}
+
+/* Antarctic Igloo Background */
+.alchemist-lab-bg {
+  position: relative;
+  min-height: 100vh;
+}
+
+.alchemist-overlay {
+  background: rgba(0, 20, 40, 0.3); /* Cool blue overlay for Antarctic feel */
+  backdrop-filter: blur(1px);
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Antarctic Header Styling - Ice Theme Update */
+.alchemist-header {
+  background: linear-gradient(
+    135deg,
+    rgba(70, 130, 180, 0.15),
+    rgba(100, 149, 237, 0.1)
+  ); /* Steel blue gradient */
+  border: 3px solid #87ceeb; /* Sky blue border */
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4),
+    /* Enhanced shadow for depth */ inset 0 3px 6px rgba(135, 206, 235, 0.3),
+    /* Sky blue inner glow */ 0 0 20px rgba(135, 206, 235, 0.2); /* Subtle blue aura */
+  position: relative;
+}
+
+.alchemist-header::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid rgba(176, 224, 230, 0.4); /* Powder blue ethereal border */
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.alchemist-title {
+  color: #e0f6ff; /* Alice blue */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(135, 206, 235, 0.6); /* Blue glow */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.alchemist-subtitle {
+  color: #b0e0e6; /* Powder blue */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
+}
+
+/* Money Display - Icy Fish Currency */
+.alchemist-money-display {
+  background: linear-gradient(
+    135deg,
+    rgba(70, 130, 180, 0.9),
+    rgba(100, 149, 237, 0.85)
+  ); /* Steel blue gradient */
+  border: 2px solid #87ceeb; /* Sky blue border */
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(135, 206, 235, 0.5),
+    /* Sky blue inset glow */ 0 0 10px rgba(135, 206, 235, 0.3); /* Blue aura */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.alchemist-money-display span {
+  color: #e0f6ff; /* Alice blue for fish currency */
+}
+
+/* Restart Button - Icy Blue Theme */
+.alchemist-restart-button {
+  background: linear-gradient(
+    135deg,
+    #4682b4,
+    #2f4f4f
+  ); /* Steel blue to dark slate gray */
+  border: 2px solid #87ceeb; /* Sky blue border */
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  color: #e0f6ff; /* Alice blue */
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35),
+    inset 0 1px 3px rgba(176, 224, 230, 0.25);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.alchemist-restart-button:hover {
+  background: linear-gradient(
+    135deg,
+    #5f9ea0,
+    #4682b4
+  ); /* Cadet blue to steel blue */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.45),
+    inset 0 1px 3px rgba(176, 224, 230, 0.35), 0 0 10px rgba(135, 206, 235, 0.5); /* Sky blue glow on hover */
+}
+
+/* Enhanced Igloo Transformation Chamber Card Styling */
+.arcane-pedestal-card {
+  background: linear-gradient(
+    145deg,
+    rgba(240, 248, 255, 0.7),
+    rgba(230, 230, 250, 0.65)
+  ); /* Alice blue to lavender gradient for icy feel - much higher opacity */
+  border: 4px solid rgba(176, 224, 230, 0.98); /* Powder blue border - very high opacity */
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6),
+    inset 0 4px 12px rgba(255, 255, 255, 0.35),
+    0 0 40px rgba(176, 224, 230, 0.5); /* Enhanced icy aura - much higher opacity */
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  animation: frostGlow 6s ease-in-out infinite;
+  /* Add complex frost texture */
+  background-image: radial-gradient(
+      circle at 25% 75%,
+      rgba(255, 255, 255, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 25%,
+      rgba(176, 224, 230, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.02) 50%,
+      transparent 70%
+    );
+}
+
+.arcane-pedestal-card::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 3px solid rgba(255, 255, 255, 0.25); /* Frosty inner border */
+  border-radius: 18px;
+  pointer-events: none;
+  /* Add intricate ice crystal pattern */
+  background-image: linear-gradient(
+      45deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.08) 50%,
+      transparent 60%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 40%,
+      rgba(176, 224, 230, 0.06) 50%,
+      transparent 60%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 45%,
+      rgba(255, 255, 255, 0.04) 50%,
+      transparent 55%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 45%,
+      rgba(176, 224, 230, 0.04) 50%,
+      transparent 55%
+    );
+}
+
+/* Add multiple snowflakes to the transformation chamber */
+.arcane-pedestal-card::after {
+  content: "❄ ❅ ❄";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: rgba(176, 224, 230, 0.4);
+  font-size: 0.9rem;
+  animation: snowflakeFloat 5s ease-in-out infinite;
+  pointer-events: none;
+  letter-spacing: 8px;
+}
+
+.arcane-pedestal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.arcane-pedestal-title {
+  color: #e0f6ff; /* Alice blue */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(135, 206, 235, 0.8); /* Strong blue glow */
+  margin-bottom: 0.5rem;
+}
+
+.arcane-pedestal-subtitle {
+  color: #b0e0e6; /* Powder blue */
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+
+.arcane-pedestal-chamber {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Ice Crystal Rings */
+.arcane-ring-outer {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 3px solid rgba(135, 206, 235, 0.6); /* Sky blue */
+  border-radius: 50%;
+  animation: arcaneRotate 15s linear infinite;
+}
+
+.arcane-ring-middle {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(176, 224, 230, 0.5); /* Powder blue */
+  border-radius: 50%;
+  animation: arcaneRotate 12s linear infinite reverse;
+  border-style: dashed;
+}
+
+.arcane-ring-inner {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgba(224, 255, 255, 0.7); /* Light cyan */
+  border-radius: 50%;
+  animation: arcaneRotate 8s linear infinite;
+  border-style: dotted;
+}
+
+/* Ice Crystal Runes */
+.arcane-rune {
+  position: absolute;
+  font-size: 1.5rem;
+  color: #87ceeb; /* Sky blue */
+  text-shadow: 0 0 10px #4169e1; /* Royal blue glow */
+  animation: arcaneRunePulse 2s ease-in-out infinite;
+}
+
+.arcane-rune-tl {
+  top: -10px;
+  left: -10px;
+  animation-delay: 0s;
+}
+.arcane-rune-tr {
+  top: -10px;
+  right: -10px;
+  animation-delay: 0.5s;
+}
+.arcane-rune-bl {
+  bottom: -10px;
+  left: -10px;
+  animation-delay: 1s;
+}
+.arcane-rune-br {
+  bottom: -10px;
+  right: -10px;
+  animation-delay: 1.5s;
+}
+
+/* Central Pengu Platform */
+.arcane-gem-platform {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 펭귄을 위한 하얀색 원형 배경 */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.95),
+    rgba(248, 250, 252, 0.9)
+  );
+  border: 4px solid rgba(70, 130, 180, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15),
+    inset 0 3px 8px rgba(255, 255, 255, 0.8), 0 0 25px rgba(70, 130, 180, 0.3);
+}
+
+.arcane-platform-base {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8),
+    rgba(248, 250, 252, 0.6)
+  ); /* 하얀색 그라데이션 */
+  border: 3px solid rgba(70, 130, 180, 0.4); /* Steel blue */
+  border-radius: 50%;
+  animation: arcanePlatformPulse 3s ease-in-out infinite;
+}
+
+.arcane-platform-glow {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  ); /* 하얀색 글로우 */
+  border-radius: 50%;
+  animation: arcanePlatformGlow 4s ease-in-out infinite;
+}
+
+/* Ice Particles */
+.arcane-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.arcane-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #e0f6ff; /* Alice blue */
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: arcaneParticleFloat 4s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(135, 206, 235, 0.8); /* Sky blue glow */
+}
+
+.arcane-particle-1 {
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
+}
+.arcane-particle-2 {
+  top: 30%;
+  right: 20%;
+  animation-delay: 0.7s;
+}
+.arcane-particle-3 {
+  bottom: 25%;
+  left: 25%;
+  animation-delay: 1.4s;
+}
+.arcane-particle-4 {
+  bottom: 35%;
+  right: 15%;
+  animation-delay: 2.1s;
+}
+.arcane-particle-5 {
+  top: 50%;
+  left: 10%;
+  animation-delay: 2.8s;
+}
+.arcane-particle-6 {
+  top: 60%;
+  right: 10%;
+  animation-delay: 3.5s;
+}
+
+/* Result Display Styling */
+.arcane-result-display {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  min-width: 280px;
+  animation: arcaneResultAppear 0.5s ease-out;
+  z-index: 9999;
+}
+
+.arcane-result-success {
+  border: 2px solid #32cd32; /* Lime green */
+  box-shadow: 0 0 20px rgba(50, 205, 50, 0.5);
+}
+
+.arcane-result-failure {
+  border: 2px solid #ff6347; /* Tomato red */
+  box-shadow: 0 0 20px rgba(255, 99, 71, 0.5);
+}
+
+.arcane-result-disassemble-success {
+  border: 2px solid #87ceeb; /* Sky blue */
+  box-shadow: 0 0 20px rgba(135, 206, 235, 0.5);
+}
+
+.arcane-result-disassemble-failure {
+  border: 2px solid #b0c4de; /* Light steel blue */
+  box-shadow: 0 0 20px rgba(176, 196, 222, 0.5);
+}
+
+.arcane-result-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.arcane-result-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Animation Keyframes */
+@keyframes arcaneRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes arcaneRunePulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes arcanePlatformPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(70, 130, 180, 0.4); /* Steel blue */
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(70, 130, 180, 0.6);
+  }
+}
+
+@keyframes arcanePlatformGlow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes arcaneParticleFloat {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateY(-10px) scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-5px) scale(0.8);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(-15px) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes arcaneResultAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px) scale(1);
+  }
+}
+
+/* Antarctic Panel Styling - Icy Card UI */
+.alchemist-panel {
+  background: linear-gradient(
+    145deg,
+    rgba(240, 248, 255, 0.65),
+    rgba(230, 230, 250, 0.6)
+  ); /* Alice blue to lavender gradient for icy feel - much higher opacity */
+  border: 3px solid rgba(176, 224, 230, 0.95); /* Powder blue border - very high opacity */
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5),
+    inset 0 2px 8px rgba(255, 255, 255, 0.3), 0 0 25px rgba(176, 224, 230, 0.4); /* Icy glow effect - enhanced */
+  position: relative;
+  backdrop-filter: blur(15px);
+  /* Add frost texture effect */
+  background-image: radial-gradient(
+      circle at 20% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(176, 224, 230, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 50%
+    );
+}
+
+.alchemist-panel::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Frosty inner border */
+  border-radius: 12px;
+  pointer-events: none;
+  /* Add subtle ice crystal pattern */
+  background-image: linear-gradient(
+      45deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.05) 50%,
+      transparent 60%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 40%,
+      rgba(176, 224, 230, 0.05) 50%,
+      transparent 60%
+    );
+}
+
+/* Add animated snowflake effect */
+.alchemist-panel::after {
+  content: "❄";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgba(176, 224, 230, 0.3);
+  font-size: 1.2rem;
+  animation: snowflakeFloat 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Antarctic Button Styling - Icy Buttons */
+.alchemist-button {
+  background: linear-gradient(
+    135deg,
+    rgba(176, 224, 230, 0.75),
+    rgba(135, 206, 235, 0.7)
+  ); /* Powder blue to sky blue gradient - much higher opacity */
+  border: 2px solid rgba(176, 224, 230, 0.95); /* Powder blue border - very high opacity */
+  border-radius: 12px;
+  color: #f0f8ff; /* Alice blue text */
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5),
+    inset 0 2px 6px rgba(255, 255, 255, 0.4), 0 0 15px rgba(176, 224, 230, 0.4); /* Icy glow - much enhanced */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(176, 224, 230, 0.4);
+  backdrop-filter: blur(12px);
+  /* Add frost pattern to buttons */
+  background-image: radial-gradient(
+      circle at 30% 70%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.05) 50%,
+      transparent 60%
+    );
+}
+
+.alchemist-button:hover:not(:disabled) {
+  background: linear-gradient(
+    135deg,
+    rgba(176, 224, 230, 0.4),
+    rgba(135, 206, 235, 0.35)
+  ); /* Enhanced icy gradient on hover */
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
+    inset 0 2px 8px rgba(255, 255, 255, 0.25), 0 0 25px rgba(176, 224, 230, 0.4); /* Enhanced icy glow */
+  border-color: rgba(135, 206, 235, 0.9);
+}
+
+.alchemist-button:disabled {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 60, 80, 0.7),
+    rgba(40, 40, 60, 0.6)
+  );
+  border-color: #505070;
+  color: #8080a0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 1px 2px rgba(100, 100, 120, 0.1);
+}
+
+/* Success Button Variant - Icy Green */
+.alchemist-button-success {
+  background: linear-gradient(
+    135deg,
+    #2e8b57,
+    #006400
+  ); /* Sea green to dark green */
+  border-color: #3cb371; /* Medium sea green */
+  color: #f0fff0; /* Honeydew */
+}
+
+.alchemist-button-success:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3cb371, #2e8b57);
+}
+
+/* Danger Button Variant - Icy Red */
+.alchemist-button-danger {
+  background: linear-gradient(
+    135deg,
+    #b22222,
+    #8b0000
+  ); /* Fire brick to dark red */
+  border-color: #dc143c; /* Crimson */
+  color: #fff0f5; /* Lavender blush */
+}
+
+.alchemist-button-danger:hover:not(:disabled) {
+  background: linear-gradient(135deg, #dc143c, #b22222);
+}
+
+/* Inventory Slot Styling - Frozen Slots */
+.alchemist-inventory-slot {
+  background: linear-gradient(
+    135deg,
+    rgba(240, 248, 255, 0.65),
+    rgba(230, 230, 250, 0.6)
+  ); /* Alice blue to lavender gradient for icy feel - much higher opacity */
+  border: 2px solid rgba(176, 224, 230, 0.9); /* Powder blue border - very high opacity */
+  border-radius: 12px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.4), 0 0 15px rgba(176, 224, 230, 0.3); /* Icy glow - much enhanced */
+  position: relative;
+  backdrop-filter: blur(10px);
+  /* Add frost pattern */
+  background-image: radial-gradient(
+      circle at 30% 70%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(176, 224, 230, 0.06) 0%,
+      transparent 40%
+    );
+}
+
+.alchemist-inventory-slot::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Frosty inner border */
+  border-radius: 8px;
+  pointer-events: none;
+  /* Add ice crystal effect */
+  background-image: linear-gradient(
+      45deg,
+      transparent 45%,
+      rgba(255, 255, 255, 0.03) 50%,
+      transparent 55%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 45%,
+      rgba(176, 224, 230, 0.03) 50%,
+      transparent 55%
+    );
+}
+
+.alchemist-inventory-slot:hover {
+  border-color: rgba(135, 206, 235, 0.8); /* Sky blue on hover */
+  box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.15),
+    0 6px 12px rgba(0, 0, 0, 0.25), 0 0 20px rgba(135, 206, 235, 0.3); /* Enhanced icy glow */
+  transform: translateY(-2px);
+}
+
+.alchemist-inventory-slot.occupied {
+  background: linear-gradient(
+    135deg,
+    rgba(176, 224, 230, 0.25),
+    rgba(135, 206, 235, 0.2)
+  ); /* Powder blue to sky blue for occupied */
+  border-color: rgba(135, 206, 235, 0.8); /* Sky blue border for occupied */
+  box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(135, 206, 235, 0.2); /* Stronger icy glow for occupied */
+}
+
+/* Text Styling - Antarctic theme */
+.alchemist-text {
+  color: #e0f6ff; /* Alice blue for better contrast on icy background */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 0 0 8px rgba(176, 224, 230, 0.3); /* Icy glow */
+}
+
+.alchemist-text-gold {
+  color: #f0f8ff; /* Alice blue with more white for important info */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(135, 206, 235, 0.5),
+    0 0 20px rgba(176, 224, 230, 0.3); /* Enhanced icy glow */
+  font-weight: bold;
+}
+
+.alchemist-text-warning {
+  color: #ffb74d; /* Keep orange/amber for warnings */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.alchemist-text-success {
+  color: #98fb98; /* Pale green */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.alchemist-text-danger {
+  color: #ffa07a; /* Light salmon */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Crystal Selection Styling - Icy Highlight */
+.powder-selection-active {
+  background: linear-gradient(
+    135deg,
+    rgba(70, 130, 180, 0.4),
+    rgba(100, 149, 237, 0.3)
+  ); /* Steel blue translucent */
+  border-color: #4169e1; /* Royal blue */
+  box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.6),
+    /* Royal blue glow */ 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation Classes */
+.alchemist-fade-in {
+  animation: alchemistFadeIn 0.5s ease-out;
+}
+
+@keyframes alchemistFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alchemist-bounce {
+  animation: alchemistBounce 0.6s ease-out;
+}
+
+@keyframes alchemistBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Antarctic-themed animations */
+@keyframes snowflakeFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-3px) rotate(90deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-5px) rotate(180deg);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-2px) rotate(270deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes icyShimmer {
+  0%,
+  100% {
+    background-position: -200% 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes frostGlow {
+  0%,
+  100% {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3),
+      inset 0 2px 8px rgba(255, 255, 255, 0.1),
+      0 0 25px rgba(176, 224, 230, 0.2);
+  }
+  50% {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3),
+      inset 0 2px 8px rgba(255, 255, 255, 0.15),
+      0 0 35px rgba(176, 224, 230, 0.3);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .alchemist-panel {
+    padding: 1rem;
+  }
+
+  .alchemist-header {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .alchemist-title {
+    font-size: 2rem;
+  }
+  .alchemist-subtitle {
+    font-size: 0.9rem;
+  }
+  .alchemist-money-display,
+  .alchemist-restart-button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  .arcane-pedestal-card {
+    padding: 1.5rem;
+    min-height: 350px;
+  }
+
+  .arcane-pedestal-title {
+    font-size: 1.2rem;
+  }
+
+  .arcane-pedestal-chamber {
+    width: 160px;
+    height: 160px;
+  }
+
+  .arcane-ring-outer {
+    width: 140px;
+    height: 140px;
+  }
+
+  .arcane-ring-middle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .arcane-ring-inner {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "images": {
+    "redGem": {
+      "url": "/src/asssets/images/p-1.png",
+      "description": "Pixel art red gem icon; ideal for health potions or power-ups.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "orangeGem": {
+      "url": "/src/asssets/images/p-2.png",
+      "description": "Pixel art orange gem icon; good for elemental items or crafting.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "yellowGem": {
+      "url": "/src/asssets/images/p-3.png",
+      "description": "Pixel art golden crystal; perfect for resources, currency, or crafting.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "greenGem": {
+      "url": "/src/asssets/images/p-4.png",
+      "description": "Pixel art green gem icon; ideal for inventory items or currency.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "blueGem": {
+      "url": "/src/asssets/images/p-5.png",
+      "description": "Pixel art blue gem icon; suitable for collectibles or power-ups.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "indigoGem": {
+      "url": "/src/asssets/images/p-6.png",
+      "description": "Sparkling pixel art blue gem; perfect for rare items or rewards.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "purpleGem": {
+      "url": "/src/asssets/images/p-7.png",
+      "description": "Pixel art purple gem icon; suitable for magical items or currency.",
+      "metadata": {
+        "width": 1024,
+        "height": 1024,
+        "style": "pixel art",
+        "assetType": "item"
+      }
+    },
+    "redPowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899091914.png",
+      "description": "A small pile of sparkling red gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "orangePowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899115515.png",
+      "description": "A small pile of sparkling orange gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "yellowPowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899138540.png",
+      "description": "A small pile of sparkling yellow gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "greenPowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899161287.png",
+      "description": "A small pile of sparkling green gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "bluePowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899186345.png",
+      "description": "A small pile of sparkling blue gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "indigoPowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899213031.png",
+      "description": "A small pile of sparkling indigo gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "purplePowder": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/item-1747899240089.png",
+      "description": "A small pile of sparkling purple gem powder, magical dust, on a transparent background",
+      "metadata": {
+        "width": 64,
+        "height": 64,
+        "style": "fantasy",
+        "assetType": "item"
+      }
+    },
+    "alchemistBackground": {
+      "url": "/src/asssets/images/AlbedoBase_XL_Create_a_pixel_art_background_of_the_inside_of_a_2.jpg",
+      "description": "Pixel art alchemist lab background with stone walls, wooden shelves filled with colorful potions, central table, magical portal, and hanging lanterns",
+      "metadata": {
+        "width": 1344,
+        "height": 768,
+        "style": "pixel art",
+        "assetType": "background"
+      }
+    }
+  },
+  "videos": {
+    "enhancementVideo": {
+      "url": "https://agent8-games.verse8.io/current/chat-uploads/61f99e92-a274-44.mp4",
+      "description": "Enhancement effect video that plays during gem enhancement process",
+      "metadata": {
+        "type": "video",
+        "format": "mp4",
+        "assetType": "effect"
+      }
+    }
+  },
+  "audio": {
+    "backgroundMusic": {
+      "url": "https://agent8-games.verse8.io/mcp-agent8-generated/static-assets/audio-94234ec7-06cc-4f77-93bb-e3456b6cd185.ogg",
+      "description": "Mystical background music for the alchemist laboratory atmosphere",
+      "metadata": {
+        "type": "audio",
+        "format": "ogg",
+        "assetType": "music",
+        "loop": true,
+        "volume": 0.3
+      }
+    }
+  }
+}

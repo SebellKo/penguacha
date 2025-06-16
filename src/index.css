@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"); /* Added Silkscreen font */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Alchemist Lab Pixel Art Color Scheme */
+  --bg-primary: #2d1810;
+  --bg-secondary: #3d2418;
+  --bg-tertiary: #4a2c1a;
+  --text-primary: #f4e4c1;
+  --text-secondary: #d4c4a1;
+  --text-accent: #ffd700;
+  --border-primary: #8b4513;
+  --border-secondary: #a0522d;
+  --accent-gold: #ffd700;
+  --accent-copper: #b87333;
+  --stone-light: #8b8680;
+  --stone-dark: #696969;
+  --wood-light: #deb887;
+  --wood-dark: #8b7355;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-size: 8px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-weight: normal;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+button {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-size: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Enhanced p tag font size for better readability */
+p {
+  font-size: 10px;
+}
+
+/* Pixel Art Animations */
+@keyframes pixelPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pixelShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes pixelGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 4px var(--accent-gold), inset 0 0 4px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 8px var(--accent-gold), inset 0 0 8px rgba(255, 215, 0, 0.4);
+  }
+}
+
+/* Gem Waiting for Enhancement Animation */
+@keyframes gemWaitingBlink {
+  0%,
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.7;
+    filter: brightness(1.3);
+  }
+}
+
+.gem-waiting-blink {
+  animation: gemWaitingBlink 2s ease-in-out infinite;
+}
+
+/* Enhanced Screen Shake Animation */
+@keyframes screenShakeIntense {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-5px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* Burst Effect Animations */
+@keyframes burstParticleDestructive {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy)))
+      scale(0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Success Effect Animations */
+@keyframes successSparkle {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes successGlow {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes successPulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Burst Effect Classes */
+.burst-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Enhanced Screen Shake Effect */
+.screen-shake-active {
+  animation: screenShakeIntense 0.6s ease-in-out;
+}
+
+.burst-particle-destructive {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 0;
+  animation: burstParticleDestructive 0.8s ease-out forwards;
+  z-index: 11;
+}
+
+.burst-particle-destructive.fragment {
+  width: 6px;
+  height: 6px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.burst-particle-destructive.shard {
+  width: 3px;
+  height: 8px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.burst-particle-destructive.large {
+  transform: scale(1.5);
+}
+
+/* Success Effect Classes */
+.success-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.success-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: successGlow 1.6s ease-out forwards;
+  z-index: 11;
+}
+
+.success-sparkle-magical {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  animation: successSparkle 1.6s ease-out forwards;
+  z-index: 12;
+}
+
+.success-sparkle-magical.star {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  width: 6px;
+  height: 6px;
+}
+
+.success-sparkle-magical.diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 5px;
+  height: 5px;
+}
+
+.success-sparkle-magical.sparkle {
+  clip-path: polygon(
+    50% 0%,
+    60% 40%,
+    100% 50%,
+    60% 60%,
+    50% 100%,
+    40% 60%,
+    0% 50%,
+    40% 40%
+  );
+  width: 6px;
+  height: 6px;
+}
+
+.success-sparkle-magical.twinkle {
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+}
+
+.success-pulse-magical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: successPulse 1.6s ease-out forwards;
+  z-index: 11;
+}
+
+.success-pulse-magical-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: successPulse 1.6s ease-out forwards;
+  animation-delay: 0.3s;
+  z-index: 11;
+}
+
+/* Utility classes for pixel effects */
+.pixel-border {
+  border: 2px solid var(--border-primary);
+  border-image: none;
+}
+
+.pixel-shadow {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pixel-glow {
+  animation: pixelGlow 2s ease-in-out infinite;
+}
+
+.pixel-pulse {
+  animation: pixelPulse 1s ease-in-out infinite;
+}
+
+.pixel-shake {
+  animation: pixelShake 0.5s ease-in-out;
+}
+
+/* Hide scrollbar while maintaining scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
