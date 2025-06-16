@@ -7,7 +7,7 @@ import Inventory from "./components/Inventory";
 import BackgroundMusic from "./components/BackgroundMusic";
 import Assets from "./assets.json";
 // Import local background image
-import backgroundImg from "./asssets/images/ChatGPT Image 2025년 6월 11일 오후 03_15_18.png";
+import backgroundImg from "./asssets/images/background.png";
 import {
   initializeGameState,
   purchaseEgg,
